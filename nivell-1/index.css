@@ -1,0 +1,90 @@
+html { 
+    max-width: 1200px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2vh;
+    background-color: black;
+    height: 40%;
+}
+    .top{
+        display: flex;
+        background-color: darkblue;
+        margin: 2vh;
+        justify-content: space-between;
+        height: 50%;
+    }
+        logo, social {
+            background-color: brown;
+            margin: 2vh;
+        }
+        nav {
+            background-color: brown;
+            flex: 1;
+            margin: 2vh;
+        }
+    slider{
+        background-color: darkorange;
+        margin: 2vh;
+        display: flex;
+        
+        height: 50%;
+    }
+        .slider1 {
+            background-color: coral;
+            margin: 2vh;
+            width: 90%;
+            
+        }
+.center {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+    background-color: black;
+    height: 50%;
+}
+.stories {
+    background-color: darkslateblue;
+    display: flex;
+    flex: 1;
+    margin: 2vh;
+    justify-content: space-between;
+    
+}
+    .storie1 {
+        background-color: darkslateblue;
+        display: flex;
+        margin: 2vh;
+        justify-content: space-between;
+        width: 60%;
+    }
+        .article1, .article2, .article3, .article4{
+            background-color: blue;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        .article5{
+            background-color: cyan;
+        }
+    .list {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        margin: 2vh;
+        width: 30%;
+    }
+        .list1, .list2{
+            background-color: blanchedalmond;
+        }
+footer {
+    display: flex;
+    background-color: black;
+    margin: 2vh;
+    height: 10%;
+
+}
+@media screen {
+    
+}
