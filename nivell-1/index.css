@@ -4,26 +4,30 @@ html {
 header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin: 2vh;
     background-color: black;
     height: 40%;
+    justify-content: flex-start;
 }
     .top{
         display: flex;
         background-color: darkblue;
         margin: 2vh;
-        justify-content: space-between;
+        justify-content: flex-start;
         height: 50%;
     }
         logo, social {
             background-color: brown;
             margin: 2vh;
+            width: 20%;
+            height: 90%;
         }
         nav {
             background-color: brown;
-            flex: 1;
+           
             margin: 2vh;
+            width: 80%;
+            height: 90%;
         }
     slider{
         background-color: darkorange;
@@ -32,11 +36,11 @@ header {
         
         height: 50%;
     }
-        .slider1 {
+       slider > .slider1 {
             background-color: coral;
             margin: 2vh;
-            width: 90%;
             
+            flex: 1 1 auto;
         }
 .center {
     display: flex;
@@ -56,17 +60,22 @@ header {
     .storie1 {
         background-color: darkslateblue;
         display: flex;
+        flex-wrap: wrap;
         margin: 2vh;
         justify-content: space-between;
         width: 60%;
+        height: 50%;
     }
         .article1, .article2, .article3, .article4{
             background-color: blue;
-            flex-wrap: nowrap;
+            flex: 1 200px;
             justify-content: space-between;
+        
+            
         }
         .article5{
             background-color: cyan;
+            flex: 2 200px;
         }
     .list {
         display: flex;
@@ -84,6 +93,11 @@ footer {
     margin: 2vh;
     height: 10%;
 
+}
+.prova {
+    flex: 1 1 auto;
+    background-color: aqua;
+    margin: 2vh;
 }
 @media screen {
     
