@@ -15,6 +15,7 @@ header {
         logo {
             margin: 1vh 1vh 1vh 2vh;
             flex: 1 1 calc(20% - 2rem);
+            justify-content: center;
         }
         social {
             background-color: brown;
