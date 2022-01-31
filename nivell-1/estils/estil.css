@@ -5,17 +5,19 @@ header {
     display: flex;
     flex-direction: column;
     margin: 2vh;
+    background-color: black;
     justify-content: flex-start;
 }
     .top{
         display: flex;
+        background-color: darkblue;
         margin: 2vh 2vh 0 2vh;
         justify-content: flex-start;
     }
         logo {
+            background-color: brown;
             margin: 1vh 1vh 1vh 2vh;
             flex: 1 1 calc(20% - 2rem);
-            justify-content: center;
         }
         social {
             background-color: brown;
