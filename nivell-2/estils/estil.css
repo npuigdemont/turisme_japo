@@ -47,20 +47,20 @@ header {
     nav ul{
             display: flex;
             justify-content: center;
-            
         }
       nav li{
             text-align: center;
             list-style: none;
             padding: 0 1em 0 1em;
         }
-        nav :hover {
+        nav > ul > li :hover {
                 transform: scale(110%);
                 cursor: pointer;
         }
         nav li a{
             padding: 1em;
             text-decoration: none;
+            color: gray;
         }
     slider{
         
@@ -95,11 +95,10 @@ header {
     display: flex;
     box-sizing:content-box;
     margin: 0 2vh 0 2vh;
-    background-color: black;
-  
+    
 }
 .stories {
-    background-color: darkslateblue;
+    background-color: darkgray;
     display: flex;
     flex-wrap: wrap;
     box-sizing:content-box;
@@ -108,7 +107,7 @@ header {
     
 }
         .article{
-            background-color: blue;
+            background-color: beige;
             align-items: center;
             height: auto;
             width: auto;
@@ -120,13 +119,13 @@ header {
             align-self: flex-start;
         }
         .article:nth-child(5){
-            background-color: cornflowerblue;
+            background-color: darkgray;
         }
      
     .list {
         display: flex;
         flex-direction: column;
-        background-color: red;
+        background-color: darkgray;
         margin: 2vh 2vh 2vh 0;
         flex: 1 1 auto;
     }
