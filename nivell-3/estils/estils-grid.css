@@ -1,0 +1,237 @@
+html { 
+    max-width: 1200px;
+}
+body {
+    display: grid;
+    grid-template-rows: 25% 70% 5%;
+    grid-row-gap: 2vh;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1vh;
+}
+.top{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-column-gap: 2vh;
+}
+logo{
+    justify-self: center;
+    align-self: center;
+    margin-left: 2vh;
+}
+nav{
+    color: gray;
+} 
+    nav li{
+    list-style: none;
+    }
+    nav > ul > li :hover {
+        transform: scale(110%);
+        cursor: pointer;
+    }
+    nav li a{
+    padding: 0.2em;
+    text-decoration: none;
+    color: gray;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        padding: 0.1em;
+    }
+social {
+    justify-self: center;
+    align-self: center;
+    margin-right: 2vh;
+}
+    social i {
+    color: gray;
+    padding: 0.2em;
+    }
+    social :hover {
+    transform: scale(110%);
+    cursor: pointer;
+    }
+
+slider{
+    margin: 2vh;
+    display: grid;
+    position: relative;
+}
+.slider1 > img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    position: relative;
+}
+.slider1 > .text-sobre {
+    color: coral;
+    opacity: 85%;
+    position: absolute;
+    font-size: 250%;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding-left: 3.5em;
+    top: 50%;
+}
+.center {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin: 0 2vh 0 2vh;
+}
+.stories {
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1vh;
+}
+.article{
+    background-color: beige;
+    align-items: center;
+    padding: 1vh;
+    margin: 1vh;
+}
+.article > img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+.article > h2 {
+    text-transform: uppercase;
+    background-color: blueviolet;
+    color: white;
+    padding-left: 0.5vh;
+}
+.article > p {
+    column-count: 2;
+    padding: 0.5vh;
+}
+.article > a {
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+}
+.article:nth-child(5){
+    background-color: darkgray;
+}
+.something {
+    margin: 0 0 0 1vh;
+    background-color: darkgray;
+}
+.something1{
+    margin: 1vh;
+}
+.something1 > h2{
+    color: black; 
+}
+.something2{
+    margin: 1vh;
+}
+.something2 > p {
+    color: black;
+    align-self: start;
+}
+footer {
+    display: grid;
+    background-color: darkgray;
+    margin: 2vh;
+}
+footer > p {
+    align-self: center;
+    justify-self: stretch;
+    background-color: beige;
+    margin: 0 2vh 0 2vh;
+    padding: 2vh;
+    color: gray;
+    text-align: center;
+}
+/*tablets*/
+@media (min-width: 481px) and (max-width: 767px){
+    logo {
+        margin: 2vh;
+    }
+    social {
+        padding: 1em 0.2em 1em 0.2em;
+    }
+    social > i {
+        padding: 0 0.2em 0 0.2em;
+    }
+    .center {
+        background-color: gold;
+        grid-template-columns: auto;
+    }
+    .something {
+        margin: 0 2vh 2vh 2vh;
+    }
+}
+/*mobile*/
+@media (min-width: 320px) and (max-width: 480px){
+    .top {
+        grid-template-columns: auto;  
+    }
+    logo{
+        margin: 2vh;
+    }
+    nav {
+        margin: 0.1vh;
+    }
+    nav li {
+        padding: 0 0.2em 0 0.2em;
+    }
+    nav ul {
+        padding-inline-start: 0px;
+        margin-block-start: 0.2em;
+        margin-block-end: 0.2em;
+    }
+    social{
+        margin: 2vh;
+    }
+    .slider1 > .text-sobre {
+        padding-left: 0.5em;
+        top: 30%;
+    }
+    .center {
+        background-color: gold;
+        grid-template-columns: auto;
+    }
+      /*  .article {
+            flex-basis: 100%; 
+        }*/
+    .list {
+        margin: 0 2vh 2vh 2vh;
+    }
+    .something {
+        margin: 0 2vh 2vh 2vh;
+    }
+}
+/*animations*/
+logo {
+    position: relative;
+    animation: logos 3s ease 0s 1 alternate none;
+}
+@keyframes logos {
+    0% {transform: scale(100%);}
+    50% {transform: scale(110%);
+        top: 15px;
+        left: 10px;   
+    }
+    100% {transform: scale(100%);
+        top: 7.5px;
+        left: 5px;}
+}
+.text-sobre {
+    animation: textos 3s ease 0s 1 alternate none;
+}
+@keyframes textos {
+    0% {transform: scale(100%);
+    }
+    50% {transform: scale(110%);
+        -webkit-text-stroke: 2px black; 
+        color: white;
+    }
+    100% {transform: scale(100%);}
+}
